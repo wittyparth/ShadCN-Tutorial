@@ -1,4 +1,4 @@
-import { Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts"
 import { ChartContainer, ChartLegend, ChartLegendContent, ChartTooltip, ChartTooltipContent, type ChartConfig } from "./ui/chart"
 
 export const description = "A multiple bar chart"

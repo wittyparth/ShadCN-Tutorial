@@ -1,5 +1,5 @@
 import { Badge } from "./ui/badge";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent, CardFooter, CardTitle } from "./ui/card";
 const popularContent = [
   {
     id: 1,

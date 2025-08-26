@@ -6,7 +6,6 @@ import {
   Home,
   Inbox,
   NetworkIcon,
-  Plus,
   PlusIcon,
   Search,
   Settings,
@@ -144,9 +143,7 @@ function AppSidebar() {
                     <SquareTerminal />
                     <span className="">Deployments</span>
                     <ChevronDown
-                      className={`ml-auto transition-transform ${
-                        open ? "rotate-180" : ""
-                      }`}
+                      className={`ml-auto`}
                     />
                   </SidebarMenuButton>
                 </CollapsibleTrigger>
@@ -178,9 +175,7 @@ function AppSidebar() {
                     <NetworkIcon />
                     <span className="">API Reference</span>
                     <ChevronDown
-                      className={`ml-auto transition-transform ${
-                        open ? "rotate-180" : ""
-                      }`}
+                      className={`ml-auto transition-transform`}
                     />
                   </SidebarMenuButton>
                 </CollapsibleTrigger>
