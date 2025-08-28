@@ -217,7 +217,7 @@ function AppSidebar() {
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton>
                   <User2 />
-                  John Doe
+                  Partha Saradhi
                   <ChevronUp className="ml-auto" />
                 </SidebarMenuButton>
               </DropdownMenuTrigger>

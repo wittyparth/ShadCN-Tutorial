@@ -8,7 +8,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LogOut, User } from "lucide-react";
+import { Album, LogOut, User } from "lucide-react";
 import { SidebarTrigger } from "./ui/sidebar";
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const Header = () => {
     <div className="flex items-center justify-between w-full p-4 sticky z-10 top-0 bg-background">
       <SidebarTrigger/>
       <div className="flex justify-between items-center gap-4">
-          <Link to="/">
+          <Link to="/users/parthu">
         <p>
           Dashboard</p>
           </Link>
@@ -32,10 +32,17 @@ const Header = () => {
           <DropdownMenuContent>
             <DropdownMenuLabel>My Account</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <User/> User
+            <DropdownMenuItem asChild>
+              <Link to="/users/parthu">
+              <User/> Dashboard
+              </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link to="/users">
+              <Album />
+              Transaction
+              </Link>
+              </DropdownMenuItem>
             <DropdownMenuItem variant="destructive">
               <LogOut /> Logout
             </DropdownMenuItem>
