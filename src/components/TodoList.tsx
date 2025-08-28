@@ -18,7 +18,7 @@ interface Todo {
 const TodoList = () => {
     const [date,setDate] = useState<Date | undefined>(new Date())
     const [open,setOpen] = useState(false)
-    const [todos]:(Todo[]| never[][]) = useFetch("https://jsonplaceholder.typicode.com/todos")
+    const {data : todos} = useFetch<Todo[]>("https://jsonplaceholder.typicode.com/todos")
   return (
     <div>
         <h1 className="text-lg font-medium mb-3">Todo List</h1>
@@ -43,7 +43,7 @@ const TodoList = () => {
         <ScrollArea className="h-[400px] rounded-md p-3">
             <div className="flex flex-col gap-3">
                 {
-                    todos.map((todo)=>(
+                   todos && todos.map((todo)=>(
                         <Card key={todo?.id} className="flex-row items-center gap-4 p-3">
                                 <Checkbox/>
                                 <span className="text-muted-foreground">
