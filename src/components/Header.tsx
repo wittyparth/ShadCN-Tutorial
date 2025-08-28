@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between w-full p-4">
+    <div className="flex items-center justify-between w-full p-4 sticky z-10 top-0 bg-background">
       <SidebarTrigger/>
       <div className="flex justify-between items-center gap-4">
           <Link to="/">

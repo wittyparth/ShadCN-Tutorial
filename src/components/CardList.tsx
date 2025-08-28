@@ -33,14 +33,6 @@ const popularContent = [
       "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=800",
     count: 1500,
   },
-  {
-    id: 5,
-    title: "Image Generation with AI",
-    badge: "AI",
-    image:
-      "https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1200,
-  },
 ];
 
 const latestTransactions = [
@@ -75,14 +67,6 @@ const latestTransactions = [
     image:
       "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=800",
     count: 2500,
-  },
-  {
-    id: 5,
-    title: "Subscription Renewal",
-    badge: "Sam Brown",
-    image:
-      "https://images.pexels.com/photos/1680175/pexels-photo-1680175.jpeg?auto=compress&cs=tinysrgb&w=800",
-    count: 1400,
   },
 ];
 const CardList = ({ title }: { title: string }) => {

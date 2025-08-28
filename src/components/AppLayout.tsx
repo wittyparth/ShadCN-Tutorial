@@ -15,7 +15,9 @@ const layout: React.FC<PropType> = ({children}) => {
         <AppSidebar/>
         <div className="h-screen w-full">
             <Header/>
+            <div className="p-4">
             {children}
+            </div>
         </div>
         </SidebarProvider>
     </div>
